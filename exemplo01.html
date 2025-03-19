@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+        }
+
+        .container {
+            display: flex;
+            width: 30rem;
+            height: 20rem;
+            margin: 2rem auto;
+            border: 1px solid #a3a0a0;
+            box-shadow: 0.5rem .5rem .3rem .01rem #a3a0a0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+
+    <script>
+        /*
+            Estrutura condicional (seleção): switch case
+            Variável
+            I/O de dados
+        */
+
+        var produto = prompt("Informe o produto");
+        switch (produto) {
+            case "arroz":
+                document.write("<div class='produto'>Você escolheu o arroz.</div>");
+                document.write("<div class='preco'>Valor: R$ 8,90</div>");
+                break;
+
+            case "café":
+                document.write("<div class='produto'>Você escolheu o café.</div>");
+                document.write("<div class='preco'>Valor: R$ 12,90</div>");
+                break;
+
+            case "feijão":
+                document.write("<div class='produto'>Você escolheu o feijão.</div>");
+                document.write("<div class='preco'>Valor: R$ 6,90</div>");
+                break;
+
+        }
+
+    </script>
+</body>
+
+</html>
