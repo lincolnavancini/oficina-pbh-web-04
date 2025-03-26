@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +7,15 @@
 </head>
 <body>
     <script>
-        var num, opcao, sum = 0;
-        
+        var num, soma = 0, opcao;
+
         do{
-            var num = parseInt(prompt("Informe um número"));
-            sum += num;
-            opcao = confirm("Deseja informar outro numero ?");
+          num = parseInt(prompt("Informe um número:"));
+          soma += num; //soma = soma + num;
+          opcao = confirm("Deseja informar outro número?");
+        } while(opcao == true);
 
-        } while (opcao == true);
-
-        document.write(`Soma dos números informados: ${sum}`);
-        
+        document.write(`Soma dos números informados: ${soma}`);
     </script>
 </body>
 </html>
